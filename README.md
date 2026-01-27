@@ -11,5 +11,5 @@ I am an MPhil in Economics candidate at the **University of Oxford**, supervised
 * Information Design
 
 ### Working Papers
-1. **The Optimal Strictness of Up-or-Out Contracts** (2026)
-   [Abstract] | [PDF Download](/assets/pdf/thesis_sample.pdf)
+1. **The Optimal Strictness of Up-or-Out Contracts** (2026) (Draft)
+   [Abstract] | [PDF Download](/assets/pdf/thesis_present.pdf)
