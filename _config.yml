@@ -1,3 +1,11 @@
-remote_theme: pages-themes/time-machine@v0.2.0
+title: Diwen Si
+email: diwen.si@economics.ox.ac.uk
+description: MPhil Economics Student at the University of Oxford.
+baseurl: "" 
+url: "https://yourusername.github.io"
+twitter_username: your_handle
+github_username:  your_username
+
+theme: minima
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-feed
