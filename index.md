@@ -12,4 +12,4 @@ I am an MPhil in Economics candidate at the **University of Oxford**, supervised
 
 ### Working Papers
 1. **The Optimal Strictness of Up-or-Out Contracts** (2026)
-   [Abstract] | [PDF Download](/assets/pdf/thesis_present.pdf)
+   [Abstract] | [PDF Download](/assets/pdf/thesis_personal.pdf) | [Reproduce code](/assets/pages/h1s_interior_reproduce.html) ([.R](/assets/code/h1s_are_interior.R), [utils.R](/assets/code/utils.R))
