@@ -6,5 +6,7 @@ url: "https://diwen-s.github.io"
 github_username: Diwen-S
 
 theme: minima
+header_pages:
+  - index.md
 plugins:
   - jekyll-feed
