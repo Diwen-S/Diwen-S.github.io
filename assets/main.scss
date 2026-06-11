@@ -3,6 +3,32 @@
 
 @import "minima";
 
+// Intro header: bio text with profile photo on the right
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+
+  .profile-pic {
+    order: 2;
+    flex-shrink: 0;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro .profile-pic {
+    order: 0;
+  }
+}
+
 // Section headings: small-caps with a hairline rule
 .home h2 {
   font-size: 1.05rem;

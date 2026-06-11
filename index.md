@@ -3,7 +3,11 @@ layout: home
 title: About Me
 ---
 
+<div class="intro" markdown="1">
+<img src="/assets/images/profile_pic.jpg" alt="Diwen Si" class="profile-pic">
+
 I am an MPhil in Economics candidate at the **University of Oxford**, supervised by Dr. Margaret Meyer. My research focuses on the optimal design of up-or-out contracts and career concerns.
+</div>
 
 ## Research Interests
 * Microeconomic Theory
