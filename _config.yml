@@ -2,10 +2,11 @@ title: Diwen Si
 email: diwen.si@economics.ox.ac.uk
 description: MPhil Economics Student at the University of Oxford.
 baseurl: "" 
-url: "https://yourusername.github.io"
-twitter_username: your_handle
-github_username:  your_username
+url: "https://diwen-s.github.io"
+github_username: Diwen-S
 
 theme: minima
+header_pages:
+  - index.md
 plugins:
   - jekyll-feed
