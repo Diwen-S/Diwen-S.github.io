@@ -1,9 +1,75 @@
 ---
 ---
 
+// ── kami-inspired design tokens ───────────────────────────────────────────
+// Warm parchment canvas, single ink-blue accent, Charter serif typography.
+// (Adapted from tw93/kami's design language; this site stays on Jekyll/minima.)
+
+$kami-canvas:   #f5f4ed; // warm parchment background
+$kami-ink:      #1f2933; // near-black body ink (warm)
+$kami-accent:   #1B365D; // ink blue — the single accent hue
+$kami-muted:    #6b6f76; // muted text
+$kami-hairline: #e3e1d6; // warm hairline rule
+
+$kami-serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+
+// ── Override minima variables (must come before the import) ────────────────
+$base-font-family: $kami-serif;
+$base-font-size:   18px;
+$base-line-height: 1.55;
+$text-color:       $kami-ink;
+$background-color: $kami-canvas;
+$brand-color:      $kami-accent;
+$content-width:    760px;
+
 @import "minima";
 
-// Intro header: bio text with profile photo on the right
+// ── Global polish ─────────────────────────────────────────────────────────
+body {
+  background-color: $kami-canvas;
+  color: $kami-ink;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: $kami-accent;
+  text-decoration: none;
+  text-underline-offset: 0.15em;
+
+  &:hover {
+    text-decoration: underline;
+    color: #12243d; // darkened ink blue
+  }
+}
+
+// Headings: serif, weight 500 (avoid synthetic bold), tight line-height
+h1, h2, h3, h4, h5, h6 {
+  font-family: $kami-serif;
+  font-weight: 500;
+  line-height: 1.25;
+  color: $kami-ink;
+}
+
+// Make the site header/footer blend into the parchment, drop hard borders
+.site-header {
+  background-color: $kami-canvas;
+  border-top: none;
+  border-bottom: 1px solid $kami-hairline;
+}
+
+.site-footer {
+  background-color: $kami-canvas;
+  border-top: 1px solid $kami-hairline;
+}
+
+.site-title,
+.site-title:visited {
+  color: $kami-ink;
+  font-weight: 500;
+}
+
+// ── Intro header: bio text with profile photo on the right ────────────────
 .intro {
   display: flex;
   align-items: center;
@@ -15,7 +81,9 @@
     width: 240px;
     height: 240px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 8px;
+    // soft "ring + whisper" shadow — no hard drop shadow
+    box-shadow: 0 0 0 1px $kami-hairline, 0 8px 24px -16px rgba(31, 41, 51, 0.4);
   }
 }
 
@@ -29,43 +97,55 @@
   }
 }
 
-// Section headings: small-caps with a hairline rule
+// ── Section headings: serif small-caps with a hairline rule ───────────────
 .home h2 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border-bottom: 1px solid #e8e8e8;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-variant: small-caps;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: $kami-accent;
+  border-bottom: 1px solid $kami-hairline;
   padding-bottom: 0.35em;
-  margin-top: 2.2em;
+  margin-top: 2.4em;
 }
 
-// Link row under paper titles: smaller and muted
+// ── Link row under paper titles: smaller and muted ────────────────────────
 .paper-links {
   font-size: 0.85em;
-  color: #828282;
+  color: $kami-muted;
 
   a {
-    color: #74909c;
+    color: $kami-accent;
   }
 }
 
-details summary {
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.9em;
+details {
+  margin-top: 0.4em;
+
+  summary {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: $kami-accent;
+  }
+
+  p {
+    color: $kami-ink;
+  }
 }
 
-// Side projects: lighter than the research sections
+// ── Side projects: lighter than the research sections ─────────────────────
 .side-projects {
-  font-size: 0.92em;
-  color: #555;
+  font-size: 0.95em;
+  color: $kami-muted;
 
   img {
     max-width: 400px;
     width: 100%;
     margin-top: 0.6em;
-    border: 1px solid #e8e8e8;
-    border-radius: 4px;
+    border-radius: 6px;
+    // ring + whisper, consistent with the profile photo
+    box-shadow: 0 0 0 1px $kami-hairline, 0 8px 24px -16px rgba(31, 41, 51, 0.4);
   }
 }
