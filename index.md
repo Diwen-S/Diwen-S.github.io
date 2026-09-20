@@ -9,6 +9,8 @@ title: About Me
 I am an MPhil in Economics candidate at the **University of Oxford**, supervised by Dr. Margaret Meyer. My research focuses on the optimal design of up-or-out contracts and career concerns.
 </div>
 
+<p class="cv-links"><strong>Download CV:</strong> <a href="/assets/pdf/cv_diwensi.pdf" download>English (PDF)</a> · <a href="/assets/pdf/cv_diwensi_zh_cn.pdf" download>Simplified Chinese (PDF)</a></p>
+
 ## Research Interests
 * Microeconomic Theory
 * Organizational Economics
