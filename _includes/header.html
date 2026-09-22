@@ -6,13 +6,13 @@
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
     {% endif %}
 
+    <a class="friend-link" href="https://sallykyang.github.io/" target="_blank" rel="noopener" lang="en">An aspiring economist ↗</a>
+
     <nav class="header-navigation" aria-label="{% if page.lang == 'zh-CN' %}主导航{% else %}Main navigation{% endif %}">
       {% if page.lang == 'zh-CN' %}
         <a href="{{ '/zh/' | relative_url }}">关于我</a>
-        <a class="friend-link" href="https://sallykyang.github.io/" target="_blank" rel="noopener">一位未来的经济学家 ↗</a>
       {% else %}
         <a href="{{ '/' | relative_url }}">About Me</a>
-        <a class="friend-link" href="https://sallykyang.github.io/" target="_blank" rel="noopener">An aspiring economist ↗</a>
       {% endif %}
     </nav>
 
