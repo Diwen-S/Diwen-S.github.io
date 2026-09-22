@@ -26,6 +26,10 @@ I am an MPhil in Economics candidate at the **University of Oxford**, supervised
    <p>In the single-period baseline, an informative equilibrium exists when the feasible project menu is wide enough. The organisation sets a strict enough threshold to make the agent prefer the most informative project. In the multi-period extension, the agent's optimal early-period precision is interior. Two forces shape it. The recovery force keeps open the possibility of a strong recovery in the final stage if the early project goes badly. The safety force maintains a higher promotion probability if the early project goes well. On the organisation side, threshold strictness and probation length are substitutes. Short probation calls for strict standards. Long probation calls for lenient ones. High cost of extending probation favours the strict-short regime; low cost favours the lenient-long one. A quota extension shows that promoting a fixed top-<em>k</em> of <em>N</em> cohort members is asymptotically equivalent to committing to a threshold.</p>
    </details>
 
+## Research Notes
+1. **A mechanism for the SMS–BCE gap in OIT** (June 2026)
+   <span class="paper-links">[Research note (PDF)](/assets/pdf/SMS_vs_BCE.pdf)</span>
+
 ## Side Projects
 <div class="side-projects" markdown="1">
 **RLCD Status Display for Claude Code** ([GitHub](https://github.com/Diwen-S/claude-to-RLCD)) — a low-power reflective LCD desk gadget that shows the live status of Claude Code sessions (working / done / action required) at a glance, without looking at the terminal.
