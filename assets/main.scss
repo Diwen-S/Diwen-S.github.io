@@ -197,9 +197,39 @@ details {
   [aria-current="page"] { font-weight: 700; text-decoration: underline; }
 }
 
+// Chinese typography: clean sans-serif, using available local fonts.
 html:lang(zh-CN) {
-  body { font-family: "Noto Serif SC", "Songti SC", SimSun, $kami-serif; line-height: 1.8; }
-  h1, h2, h3, h4, h5, h6 { font-family: inherit; }
+  body {
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: normal;
+  }
+
+  .bilingual-header .site-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .home h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-variant: normal;
+    letter-spacing: normal;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 2em;
+  }
+
+  .header-navigation, .language-switch { font-weight: 500; }
+  strong, b { font-weight: 600; }
 }
 
 @media screen and (max-width: 600px) {
