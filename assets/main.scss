@@ -152,3 +152,49 @@ details {
     box-shadow: 0 0 0 1px $kami-hairline, 0 8px 24px -16px rgba(31, 41, 51, 0.4);
   }
 }
+
+// Bilingual navigation remains visible without a menu or JavaScript.
+.bilingual-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+
+  &::after { display: none; }
+  .site-title { float: none; line-height: 1.4; margin: 0 auto 0 0; }
+}
+
+.header-navigation,
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+
+  a { padding: 0.35rem 0; }
+  a:focus-visible { outline: 2px solid $kami-accent; outline-offset: 4px; }
+}
+
+.header-navigation {
+  flex-wrap: wrap;
+  .friend-link { color: #a63126; }
+}
+
+.language-switch {
+  flex-shrink: 0;
+  white-space: nowrap;
+  [aria-current="page"] { font-weight: 700; text-decoration: underline; }
+}
+
+html:lang(zh-CN) {
+  body { font-family: "Noto Serif SC", "Songti SC", SimSun, $kami-serif; line-height: 1.8; }
+  h1, h2, h3, h4, h5, h6 { font-family: inherit; }
+}
+
+@media screen and (max-width: 600px) {
+  .bilingual-header .site-title { order: 0; }
+  .language-switch { order: 1; }
+  .header-navigation { order: 2; flex-basis: 100%; }
+}

@@ -1,12 +1,13 @@
 ---
 layout: home
 title: About Me
+lang: en
 ---
 
 <div class="intro" markdown="1">
 <img src="/assets/images/profile_pic.jpg" alt="Diwen Si" class="profile-pic">
 
-I am an MPhil in Economics candidate at the **University of Oxford**, supervised by Dr. Margaret Meyer. My research focuses on the optimal design of up-or-out contracts and career concerns.
+I graduated with an MPhil in Economics from the **University of Oxford**, where I was supervised by Dr. Margaret Meyer. My research focuses on the optimal design of up-or-out contracts and career concerns.
 </div>
 
 <p class="cv-links"><strong>Download CV:</strong> <a href="/assets/pdf/cv_diwensi.pdf" download>English (PDF)</a> · <a href="/assets/pdf/cv_diwensi_zh_cn.pdf" download>Simplified Chinese (PDF)</a></p>
