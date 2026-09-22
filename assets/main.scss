@@ -153,32 +153,34 @@ details {
   }
 }
 
-// Name and featured link occupy the top row; navigation stays below.
-.bilingual-header {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  grid-template-areas: "title friend" "navigation language";
-  align-items: center;
-  gap: 0.25rem 1rem;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+// The featured link belongs to the full-width header, outside the wrapper.
+.bilingual-site-header {
+  position: relative;
+  padding-top: 2.6rem;
 
-  &::after { display: none; }
-  .site-title {
-    grid-area: title;
-    float: none;
+  > .friend-link {
+    position: absolute;
+    top: 0.65rem;
+    right: 1.25rem;
     line-height: 1.4;
-    margin: 0;
-  }
-  .friend-link {
-    grid-area: friend;
-    justify-self: end;
-    text-align: right;
     font-size: 0.85rem;
+    text-align: right;
     color: #c0392b;
     &:visited, &:hover, &:focus { color: #c0392b; }
   }
   a:focus-visible { outline: 2px solid $kami-accent; outline-offset: 4px; }
+}
+
+.bilingual-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.6rem;
+
+  &::after { display: none; }
+  .site-title { float: none; line-height: 1.4; margin: 0 auto 0 0; }
 }
 
 .header-navigation,
@@ -190,10 +192,7 @@ details {
   a { padding: 0.35rem 0; }
 }
 
-.header-navigation { grid-area: navigation; flex-wrap: wrap; }
 .language-switch {
-  grid-area: language;
-  justify-self: end;
   white-space: nowrap;
   [aria-current="page"] { font-weight: 700; text-decoration: underline; }
 }
@@ -204,8 +203,10 @@ html:lang(zh-CN) {
 }
 
 @media screen and (max-width: 600px) {
+  .bilingual-site-header > .friend-link { right: 1rem; }
   .bilingual-header {
     column-gap: 0.75rem;
-    .friend-link { max-width: 52vw; font-size: 0.8rem; }
+    .site-title { flex-basis: 100%; }
   }
+  .language-switch { margin-left: auto; }
 }

@@ -1,12 +1,11 @@
-<header class="site-header" role="banner">
+<header class="site-header bilingual-site-header" role="banner">
+  <a class="friend-link" href="https://sallykyang.github.io/" target="_blank" rel="noopener" lang="en">An aspiring economist ↗</a>
   <div class="wrapper bilingual-header">
     {% if page.lang == 'zh-CN' %}
       <a class="site-title" rel="author" href="{{ '/zh/' | relative_url }}">司谛文</a>
     {% else %}
       <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
     {% endif %}
-
-    <a class="friend-link" href="https://sallykyang.github.io/" target="_blank" rel="noopener" lang="en">An aspiring economist ↗</a>
 
     <nav class="header-navigation" aria-label="{% if page.lang == 'zh-CN' %}主导航{% else %}Main navigation{% endif %}">
       {% if page.lang == 'zh-CN' %}
